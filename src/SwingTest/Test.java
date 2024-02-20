@@ -7,6 +7,10 @@ public class Test extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JLabel LabelText;
+    private JTextField textField1;
+    private JPanel JPanel;
+    private JLabel LableText1;
 
     public Test() {
         setContentPane(contentPane);
@@ -15,7 +19,7 @@ public class Test extends JDialog {
 
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                onOK();
+                LableText1.setText("Câu bạn đã nhập là:" + textField1.getText());
             }
         });
 
